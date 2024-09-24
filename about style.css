@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* preloader */
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #fff url('preloader.gif') no-repeat center center;
+}
+/* navbar */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: #145DA0;
+    transition: width 0.3s ease;
+}
+
+.nav-link::before {
+    left: 50%;
+}
+
+.nav-link::after {
+    right: 50%;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    width: 50%;
+}
+
+.header-top {
+    padding: 10px 0;
+}
+
+.header-top .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .contact-info i {
+    margin-right: 5px;
+}
+
+.header-top .social-icons i {
+    margin-left: 10px;
+    color:  #007bff;
+}
+/* banner */
+.banner {
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    overflow: hidden;
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    /* animation: 15s slider infinite; */
+}
+
+.slider figure img {
+    width: 20%;
+    float: left;
+    height: 100vh;
+}
+
+
+
+.main-heading {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 6px;
+}
+
+.button{
+    background-color:  #145DA0;
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    top: 0;
+}
+/* about us */
+.text-white {
+    color: white;
+}
+.bg{
+    background-image: url("https://img.freepik.com/free-photo/pouch-map-toy-airplane-blue-background-with-space-writing-text_23-2147958180.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.head2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    color: black;
+    letter-spacing: 2px;
+    
+}
+.para {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: rgb(120, 117, 117);
+}
+.img{
+   width: 100%;
+   height: 300px;
+   box-shadow: 15px 15px #145DA0;
+}
+.heading {
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: 700;
+   
+}
+.head {
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-decoration: underline;
+    
+   
+}
+.head3 {
+    letter-spacing: 8px;
+    font-size: 35px;
+    text-decoration: underline;
+    
+   
+}
+.para {
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: rgb(120, 117, 117);
+}
+.parallax-banner {
+    background-image: url('https://i.pinimg.com/originals/bf/0c/4b/bf0c4b12ad0940c813ee24fad8d5d52d.jpg');
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+  
+  .overlay1 {
+    background: rgba(0, 0, 0, 0.5); /* Overlay with black color and 50% opacity */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  h2{
+    margin-top: -20px;
+    text-decoration: underline;
+    font-weight: bold;
+    color:black;
+  }
+ 
+label{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color:  white;
+    margin-left: 30px;
+    }
+    
+   
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 0;
+    background-color: #145DA0;
+    color:white;
+  }
+  button:hover{
+    color:black
+
+  }
+   /* clents review */
+  .slick-slide {
+    margin: 0 10px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #145DA0;
+  }
+  
+  .checked {
+    color: #ffa500;
+  }
+  
+  .star i {
+    font-size: 15px;
+  }
+  .responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .review-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This ensures the content is spaced evenly */
+    background-color: #B1D4E0;
+    width: 90%;
+    flex: 1 1 200px; /* Adjust the base width for cards */
+    min-height: 250px; /* Set a minimum height for uniformity */
+    padding: 1.25rem;
+    margin: 10px; /* Add some margin for spacing */
+  }
+  .star-rating {
+    margin-top: auto; /* Push the star rating to the bottom */
+  }
+  
+  .slick-slide img {
+    display: block;
+    width: 90%;
+  }
+  
+  .review-title {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .button {
+    background-color: #145DA0;
+    color: white;
+  }
+    /* footer */
+.footer{
+    background-color:  #145DA0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.foothead{
+  color: #fff;
+}
+@media (min-width:768px) and (max-width:991px) {
+  .nav-link {
+      margin: 2px;
+      font-size: 17px;
+  }
+  .main-heading {
+      top:53%;
+      font-size: 3rem;
+      letter-spacing: 2px;
+  }
+}
+@media (min-width:425px) and (max-width:767px) {
+  .nav-link {
+      margin: 2px;
+      font-size: 15px;
+  }
+  .main-heading {
+      top:54%;
+      font-size: 2.7rem;
+      letter-spacing: 2px;
+  }
+}
+@media (min-width:375px) and (max-width:425px){
+  .main-heading {
+
+    top: 62%;
+   
+    font-size: 2rem;
+    
+    letter-spacing: 3px;
+}
+.nav-link {
+  margin: 2px;
+  font-size: 15px;
+}
+}
+@media (min-width:320px) and (max-width:374px){
+  .main-heading {
+
+    top: 63%;
+   
+    font-size: 2rem;
+    
+    letter-spacing: 2px;
+}
+.nav-link {
+  margin: 2px;
+  font-size: 15px;
+}
+.header-top .contact-info i {
+  margin-right: 1px;
+}
+
+.header-top .social-icons i {
+  margin-left: -19px;
+  color:  #007bff;
+}
+.header-top .contact-info {
+  display: block;
+  align-items: center;
+}
+}

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <!-- bootstrap cdn -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- slick slider cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+     
+    <!-- Main Heading -->
+    <h1 class="main-heading text-center "><span style="color: #145DA0; font-size: 60px;">"J</span>ourney to <span style="color: #145DA0; font-size: 60px;">E</span>xplore the <span style="color: #145DA0; font-size: 60px;">W</span>orld"</h1>
+
+     <!-- Banner Section -->
+     <div class="banner">
+        <div class="slider">
+            <figure>
+                <img src="https://www.pixelstalk.net/wp-content/uploads/images6/Travel-HD-Wallpaper-Free-download.jpg" alt="Travel Image 1">
+                <img src="image.png" alt="Travel Image 2">
+                <img src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?cs=srgb&dl=pexels-andreimike-1271619.jpg&fm=jpg" alt="Travel Image 3">
+                <img src="https://wallpapercave.com/wp/wp2803661.jpg" alt="Travel Image 4">
+                <img src="https://wallpaper.forfun.com/fetch/f1/f1634033c86fcbfa8298ace239de04cf.jpeg" alt="Travel Image 5">
+            </figure>
+        </div> 
+         <!-- navbar -->
+         <div class="overlay">
+            <header class="header">
+                <div class="header-top ">
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <div class="contact-info">
+                            <i class="fa fa-phone fa-beat" style="color: blue;"></i>
+                            <span style="color: white;">For Further Inquiries: +01 (123) 4567 90</span>
+                        </div>
+                        <a href="#" class="navbar-brand mx-4 mb-3 my-md-5">
+                    <h3 style="color:#145DA0"><i class="fa fa-plane me-2"></i>T <span class="text-white">-</span>R<span class="text-white">-</span>A<span class="text-white">-</span>V<span class="text-white">-</span>E<span class="text-white">-</span>L</h3>
+                </a>
+                        <div class="social-icons">
+                            <a href="#" class="me-2">
+                                <i class="fab fa-facebook fa-beat" style="color: blue;"></i>
+                            </a>
+                            <a href="#" class="me-2">
+                                <i class="fab fa-twitter fa-beat"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube fa-beat" style="color: red;"></i>
+                            </a>
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
+                <hr style="background-color: white;">
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="about us.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="destination.html">Destination</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="booking.html">Booking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        
+        <!-- tab -->
+        <div class="banner-content container text-center">
+            <ul class="nav nav-tabs justify-content-center" id="bookingTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Flight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="car" aria-selected="false">Car</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">Hotel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cruise-tab" data-toggle="tab" href="#cruise" role="tab" aria-controls="cruise" aria-selected="false">Cruise</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="bookingTabsContent">
+                <!-- Flight Booking Form -->
+                <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+                    <form class="form-inline justify-content-center mt-3">
+                        <div class="form-group mx-2">
+                            <label for="flight-from" class="sr-only">From</label>
+                            <input type="text" class="form-control" id="flight-from" placeholder="From">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="flight-to" class="sr-only">To</label>
+                            <input type="text" class="form-control" id="flight-to" placeholder="To">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="flight-date" class="sr-only">Date</label>
+                            <input type="date" class="form-control" id="flight-date">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Search Flights</button>
+                    </form>
+                </div>
+                <!-- Car Booking Form -->
+                <div class="tab-pane fade" id="car" role="tabpanel" aria-labelledby="car-tab">
+                    <form class="form-inline justify-content-center mt-3">
+                        <div class="form-group mx-2">
+                            <label for="car-pickup" class="sr-only">Pickup Location</label>
+                            <input type="text" class="form-control" id="car-pickup" placeholder="Pickup Location">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="car-dropoff" class="sr-only">Dropoff Location</label>
+                            <input type="text" class="form-control" id="car-dropoff" placeholder="Dropoff Location">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="car-date" class="sr-only">Date</label>
+                            <input type="date" class="form-control" id="car-date">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Search Cars</button>
+                    </form>
+                </div>
+                <!-- Hotel Booking Form -->
+                <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                    <form class="form-inline justify-content-center mt-3">
+                        <div class="form-group mx-2">
+                            <label for="hotel-location" class="sr-only">Location</label>
+                            <input type="text" class="form-control" id="hotel-location" placeholder="Location">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="hotel-checkin" class="sr-only">Check-in Date</label>
+                            <input type="date" class="form-control" id="hotel-checkin">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="hotel-checkout" class="sr-only">Check-out Date</label>
+                            <input type="date" class="form-control" id="hotel-checkout">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Search Hotels</button>
+                    </form>
+                </div>
+                <!-- Cruise Booking Form -->
+                <div class="tab-pane fade" id="cruise" role="tabpanel" aria-labelledby="cruise-tab">
+                    <form class="form-inline justify-content-center mt-3">
+                        <div class="form-group mx-2">
+                            <label for="cruise-destination" class="sr-only">Destination</label>
+                            <input type="text" class="form-control" id="cruise-destination" placeholder="Destination">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="cruise-date" class="sr-only">Date</label>
+                            <input type="date" class="form-control" id="cruise-date">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Search Cruises</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- Cruise Booking Form -->
+                <div class="tab-pane fade" id="cruise" role="tabpanel" aria-labelledby="cruise-tab">
+                    <form class="form-inline justify-content-center mt-3">
+                        <div class="form-group mx-2">
+                            <label for="cruise-destination" class="sr-only">Destination</label>
+                            <input type="text" class="form-control" id="cruise-destination" placeholder="Destination">
+                        </div>
+                        <div class="form-group mx-2">
+                            <label for="cruise-date" class="sr-only">Date</label>
+                            <input type="date" class="form-control" id="cruise-date">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Search Cruises</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- cruise -->
+
+     <div class="container mt-1">
+        <h2 class="mb-4 heading text-center">Popular Cruise</h2>
+        <p class="head1 g-3">"Discover the ultimate vacation with our cruise options, offering a luxurious experience onboard with world-class amenities and entertainment. Explore diverse destinations, enjoy exquisite dining, and indulge in unforgettable excursions tailored to your preferences."</p>
+        <div class="row  py-1">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://media.product.which.co.uk/prod/images/original/77b29681ab10-shutterstock578574514.jpg" class="card-img-top" alt="Cruise 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mediterranean Cruise</h5>
+                        <p class="card-text">Explore the beautiful Mediterranean Sea with stops in Italy, Greece, and Spain.</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                          </div>
+                          <h6>Price: <strong>$500</strong></h6>
+                        <a href="booking.html" class="btn button ">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://www.cruisemapper.com/images/ships/2112-a46bd9fcc2b.jpg" class="card-img-top" alt="Cruise 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Caribbean Cruise</h5>
+                        <p class="card-text">Enjoy a tropical vacation with stops in the Bahamas, Jamaica, and Puerto Rico.</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked "></i>
+                            <i class="fa-solid fa-star "></i>
+                          </div>
+                          <h6>Price: <strong>$1500</strong></h6>
+                        <a href="booking.html" class="btn button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://assets.princess.com/is/image/princesscruises/hubbard-glacier-alaska-island-princess-full-ship:16x9?ts=1699049234766" class="card-img-top" alt="Cruise 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Alaskan Cruise</h5>
+                        <p class="card-text">Experience the stunning landscapes and wildlife of Alaska with a cruise to remember.</p>
+                        <div class="star">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                          </div>
+                          <h6>Price: <strong>$1000</strong></h6>
+                        <a href="booking.html" class="btn button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- about us -->
+
+            <h2 class="mb-4 me-sm-1 head  text-center">About us</h2>
+            <div class="container position-relative d-flex align-items-center justify-content-center g-3" >
+                <!-- Detail Box -->
+                <div class="detail-box position-absolute top-50 start-50 translate-middle p-3  shadow" style="z-index: 1;background-color:#B1D4E0;">
+                    <h2 class="fw-bold detail  " >Let's travel with us</h2>
+                    <p  class="text-dark  fw-normal ">Discover the world with our guide.....</p>
+                    <a href="about us.html"><button class="btn button fw-bold mx-5  " style="background-color:  #007bff;">Read more</button></a>
+                </div>
+                
+                <!-- Image Grid -->
+                <div class="row g-5  align-content-center justify-content-center ">
+                    <div class="col-lg-6">
+                        <div class="row g-3 " >
+                            <div class="col-6 text-start">
+                                <img class="img-fluid  w-100  " src="hero-banner.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-75" src="image copy.png" style="margin-top: 15%;  ">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid  w-75 " src="packege-2.jpg" style="margin-top: 25%; margin-left: 20%;">
+                            </div>
+                            <div class="col-6 text-end"> 
+                                <img class="img-fluid w-100 h-75" src="gallery-1.jpg" style="margin-top: 25%; " >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- destination -->
+             <h2 class=" mb-4 py-lg-3 py-md-3  g-2 head2 text-center">Top Destinations</h2>
+             <!-- card -->
+             <div class="container">
+                 <div class="row justify-content-center">
+                     <div class="col-md-4">
+                         <div class="card">
+                             <div class="card-image">
+                                 <img src="https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXMlMjBmcmFuY2V8ZW58MHx8MHx8fDA%3D" alt="Card Image" class="img-fluid">
+                             </div>
+                             <div class="card-overlay">
+                                 <h3>FRANCE</h3>
+                                
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-4">
+                         <div class="card">
+                             <div class="card-image">
+                                 <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg" alt="Card Image" class="img-fluid">
+                             </div>
+                             <div class="card-overlay">
+                                 <h3>MALDIVE ISLAND</h3>
+                                 
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-4">
+                         <div class="card">
+                             <div class="card-image">
+                                 <img src="https://cdn.pixabay.com/photo/2015/11/18/16/03/valencia-1049389_640.jpg" alt="Card Image" class="img-fluid">
+                             </div>
+                             <div class="card-overlay">
+                                 <h3>SPAIN</h3>
+                                 
+                             </div>
+                             
+                         </div>
+                     </div>
+                     <div class="card-footer">
+                         <a href="destination.html"><button class="btn-view-more">View More -></button></a>
+                     </div>
+                 </div>
+             </div>
+ </div>
+  <!-- package banner -->
+  <div class="parallax-banner ">
+    <div class="overlay1">
+      <div class="container">
+        <h1>Special Package Offer</h1>
+        <p>Enjoy a luxurious vacation with up to 30% off on all bookings!</p>
+        <a href="booking.html" class="btn button">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <!-- package slider -->
+  <div class="container mt-3">
+    <div class="responsive">
+        <!-- Card 1 -->
+        <div class="card1">
+            <img class="card-img-top2" src="https://imagedelivery.net/0LMYosKeo5o-LXOCjdKUuA/tourscanner.com/2018/01/louvres.jpg/w=9999" alt="Paris">
+            <div class="card-body1">
+                <h4 class="card-title">Paris</h4>
+                <p class="card-text">"Experience the charm of Paris."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$700</strong></h6>
+                <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card1">
+            <img class="card-img-top2" src="https://www.holidify.com/images/bgImages/INDIA.jpg" alt="india">
+            <div class="card-body1">
+                <h4 class="card-title">India</h4>
+                <p class="card-text">"Uncover the magic of India."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h6>Price: <strong>$400</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card1">
+            <img class="card-img-top2" src="https://fullsuitcase.com/wp-content/uploads/2020/06/Best-places-to-visit-in-Italy.jpg.webp" alt="itlay">
+            <div class="card-body1">
+                <h4 class="card-title">Italy</h4>
+                <p class="card-text">"Savor the wonders of Italy."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                  </div>
+                  <h6>Price: <strong>$850</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card1">
+            <img class="card-img-top2" src="https://img.traveltriangle.com/blog/wp-content/uploads/2021/11/shutterstock_1487009060.jpg" alt="pakistan">
+            <div class="card-body1">
+                <h4 class="card-title">Pakistan</h4>
+                <p class="card-text">"Discover the beauty of Pakistan."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h6>Price: <strong>$450</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card1">
+            <img class="card-img-top2" src="https://www.cuddlynest.com/blog/wp-content/uploads/2021/07/sagrada-familia-top-spain-tourist-attractions-1030x713.jpg" alt="Spain">
+            <div class="card-body1">
+                <h4 class="card-title">Spain</h4>
+                <p class="card-text">"Uncover the magic of India."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h6>Price: <strong>$700</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card1">
+            <img class="card-img-top2" src="https://media1.thrillophilia.com/filestore/t9n6c0jhx9wsgz3rte59cqq8xlri_1582016315_shutterstock_1504112789.jpg?w=305&h=230&dpr" alt="Turkey">
+            <div class="card-body1">
+                <h4 class="card-title">Turkey</h4>
+                <p class="card-text">"Experience the allure of Turkey."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                  </div>
+                  <h6>Price: <strong>$650</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+         <!-- card 7 -->
+         <div class="card1">
+            <img class="card-img-top2" src="https://www.travelandleisure.com/thmb/9WFBvvcWb6iprVAnByZKvCTs_9E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-hallstatt-austria-BEAUTEURO0323-640d96b8cfd141c9af4582fd1f11bb42.jpg" alt="Europe">
+            <div class="card-body1">
+                <h4 class="card-title">Europe</h4>
+                <p class="card-text">"Journey for enchanting Europe."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                  </div>
+                  <h6>Price: <strong>$800</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+         
+         <!-- card 8 -->
+         <div class="card1">
+            <img class="card-img-top2" src="https://www.expatexchange.com/images/shanghai_expats_city_tw.jpg" alt="China">
+            <div class="card-body1">
+                <h4 class="card-title">China</h4>
+                <p class="card-text">"Discover the essence of China.""</p>
+                <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h6>Price: <strong>$550</strong></h6>
+                  <a href="booking.html" class="btn button">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!-- Footer -->
+<footer class="footer ">
+ <div class="container">
+   <div class="row">
+     <div class="col-md-4 py-3">
+       <h5 class="foothead">About Us</h5>
+       <p class="foothead">We are a team of dedicated professionals.</p>
+     </div>
+     <div class="col-md-4 py-3">
+       <h5 class="foothead">Contact</h5>
+       <p class="foothead">Email: <a style="color: azure;" href="#">info@example.com</a></p>
+       <p class="foothead">Phone: +1 234 567 890</p>
+     </div>
+     <div class="col-md-4 py-3">
+       <h5 class="foothead">Follow Us</h5>
+       <a style="color: azure;" href="#">Facebook</a> | 
+       <a style="color: azure;" href="#">Twitter</a> | 
+       <a style="color: azure;" href="#">Instagram</a>
+     </div>
+   </div>
+   <hr>
+   <div class="row mt-4 ">
+     <div class="col-12 align-items-center justify-content-center d-flex">
+       <p class="foothead">&copy; 2024 Your Company. All rights reserved.</p>
+     </div>
+   </div>
+ </div>
+</footer>
+
+     <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- slick slider js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js
+  "></script>
+<!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+      
+      var loader = document.getElementById("preloader");
+      
+     window.addEventListener("load",function(){
+      loader.style.display = 'none';
+     });
+  
+    
+
+  </script>
+</body>
+</html>
